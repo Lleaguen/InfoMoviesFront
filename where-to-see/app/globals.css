@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #05086f;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #171835;
+    --foreground: #ededed;
+  }
+}
+
+/* Elimina márgenes y paddings globales manualmente si persisten */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}

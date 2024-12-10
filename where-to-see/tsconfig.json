@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "commonjs", // Cambiado a "commonjs" para ser compatible con Mocha
+    "strict": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "noEmit": true,
+    "types": [
+      "mocha",
+      "chai",
+      "node"
+    ],
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "jsx": "react-jsx",
+    "incremental": true,
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    },
+    "skipLibCheck": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "tests/**/*.ts",
+     "global.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
